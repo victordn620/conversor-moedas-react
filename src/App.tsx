@@ -1,5 +1,6 @@
 import { useState } from "react"
 import './App.css'
+import { Coins } from "lucide-react";
 
 const taxas = {
   USD: { BRL: 5.0, EUR: 0.9 },
@@ -31,9 +32,12 @@ function App() {
   }
   
   return (
-    <div>
-      <h1>Conversor de Moedas</h1>
-
+    
+    <div className="container">
+      <h1 style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+        Conversor de Moedas
+        <Coins size={32} color="#333" />
+      </h1>
       <input
         type="text"
         value={valor}
