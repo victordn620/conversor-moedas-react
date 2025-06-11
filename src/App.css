@@ -1,6 +1,6 @@
 body, html {
   height: 100%;
-  background-color: #0a0f1a;
+  background-color: #f4f6f8;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
@@ -9,39 +9,47 @@ body, html {
 }
 
 .container {
-  max-width: 600px;
+  max-width: 400px;
+  width: 100%;
   margin: 50px auto;
-  padding: 30px;
-  background-color: white;
+  padding: 40px;
   text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  background-color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-  color: #333;
-  margin-bottom: 20px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #222;
+  margin-bottom: 30px;
 }
 
 input,
 select {
-  width: 80%;
-  padding: 8px;
-  margin: 3px 0;
-  border-radius: 9px;
-  border: 1px solid #ccc;
-  font-size: 14px;
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px ;
+  margin-bottom: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
 button {
-  background-color: #e5e6e9;
-  width: 30%;
-  margin-top: 25px;
-  border-radius: 20px;
-  font-size: 15px;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
   border: none;
+  background-color: #3f51b5;
+  color: white;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition:  background-color 0.4s ease;
 }
 
 button:hover {
@@ -50,7 +58,14 @@ button:hover {
 
 p {
   margin-top: 20px;
-  font-weight: bold;
+  font-weight: 500;
   color: #333;
-  font-size: 17px;
+  font-size: 18px;
+}
+
+.p-select {
+  text-align: left;
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
 }
